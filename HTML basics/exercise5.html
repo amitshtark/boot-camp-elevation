@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact form mission</title>
+</head>
+
+<body>
+<form>
+<div>
+  <h1>Contact Us</h1>
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Name:</label>
+    <input placeholder="Your name" type="text" id ="name" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input placeholder="Your@email.com" type="email" id="email" name="email" required>
+
+    <br><br>
+
+    <label for="phone">Phone:</label>
+    <input placeholder="(+972)5558888" type="tel" id="phone" name="phone">
+  </fieldset>
+
+  <fieldset>
+    <legend>Message Details</legend>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+    <option value="">choose a subject</option>
+    <option value="complaint">complaint</option>
+    <option value="compliment">compliment</option>
+    <option value="job">Job Opportunity</option>
+    </select>
+    <br><br>
+
+    <label for="low">Low</label>
+    <input type="radio" id="low" name="priority" value="low" required>
+
+    <label for="medium">Medium</label>
+    <input type="radio" id="medium" name="priority" value="medium">
+
+    <label for="high">High</label>
+    <input type="radio" id="high" name="priority" value="high" required>
+
+    <br><br>
+
+    <label for="message">Message:</label>
+    <br>
+    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" cols="40"></textarea>
+  </fieldset>
+
+<fieldset>
+    <legend>Preferences</legend>
+
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Subscribe to newsletter</label>
+
+    <br><br>
+
+    <label for="contact method">Contact Method:</label>
+    <select id="contact method" name="contact method" required>
+    <option value="email">Email</option>
+    <option value="phone">Phone</option>
+    </select>
+    <br><br>
+
+  </fieldset>
+
+</div>
+</form>
+</body>
+
+</html>
