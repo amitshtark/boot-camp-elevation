@@ -1,0 +1,17 @@
+.line-one {
+  font-size: 16px;
+  color: red;
+  font-family: Arial;
+}
+
+.line-two {
+  font-size: 24px;
+  color: blue;
+  font-family: Georgia;
+}
+
+.line-three {
+  font-size: 32px;
+  color: green;
+  font-family: Courier New;
+}

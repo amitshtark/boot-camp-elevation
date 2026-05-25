@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Form Mission</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page-container">
+    <form class="contact-form">
+
+      <h1>Contact Us</h1>
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Name:</label>
+        <input placeholder="Your name" type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input placeholder="your@email.com" type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input placeholder="(+972)5558888" type="tel" id="phone" name="phone">
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select subject</option>
+          <option value="complaint">Complaint</option>
+          <option value="compliment">Compliment</option>
+          <option value="job">Job Opportunity</option>
+        </select>
+
+        <br><br>
+
+        <p class="priority-title">Priority:</p>
+
+        <input type="radio" id="low" name="priority" value="low" required>
+        <label for="low">Low</label>
+
+        <input type="radio" id="medium" name="priority" value="medium">
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label>
+
+        <br><br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Your message..." rows="5" cols="40" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label>
+
+        <br><br>
+
+        <label for="contact-method">Contact Method:</label>
+        <select id="contact-method" name="contact-method" required>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      <button type="reset" class="reset-btn">Reset</button>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
