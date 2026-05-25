@@ -1,0 +1,21 @@
+.container{
+    width: 40%;
+    height: 100px;
+    border: 5px solid black;
+}
+.left, .right, .middle{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: calc(100%/3);
+    box-sizing: border-box;
+    background-color: palevioletred;
+}
+.left, .middle{
+    border-right: 5px solid black;
+}
+
+
+.title{
+    text-align: center;
+}
