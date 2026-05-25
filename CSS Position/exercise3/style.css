@@ -1,0 +1,52 @@
+.container{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-color: rgb(105, 81, 171);
+}
+.corner{
+  position: absolute;
+  color: black;
+}
+.top-left
+{ 
+  right: 5px;
+  bottom: 5px;
+}
+.bottom-right
+{ 
+  left: 5px;
+  top: 5px;
+}
+.col{
+  position: absolute;
+  background-color: lightyellow;
+  width: 20px;
+  bottom: 5px;
+}
+
+.one{
+  height: 25px;
+  left: 10px;
+}
+
+.two{
+  height: 100px;
+  left: 50px;
+}
+.three{
+  height: 170px;
+  left: 90px;
+}
+.four{
+  height: 150px;
+  left: 130px;
+}
+.five{
+  height: 120px;
+  left: 170px;
+}
+.six{
+  height: 70px;
+  left: 210px;
+}
