@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.page{
+  min-height: 600px;
+  background: linear-gradient(135deg, #5f7eea, #6b3fb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card{
+  width: 650px;
+  background-color: white;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 35px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.checkbox-row {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.buttons-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box {
+  border: none;
+  border-radius: 6px;
+  height: 44px;
+  min-width: 140px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.save-draft {
+  background-color: #f4f4f4;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.send-message {
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: white;
+}

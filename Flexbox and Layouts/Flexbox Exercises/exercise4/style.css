@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    border: 2px solid red;
+}
+
+.box{
+    display: flex;
+    min-width: 150px;
+    height: 100%;
+    display: flex;
+    border: 1px;
+    border: 2px solid red;
+}
+
+.row{
+    height: 20px;
+    background-color: red;
+}
+.one{
+    width: 100px;
+}
+.two{
+    width: 100px;
+}
+.three{
+    width: 60px;
+}
+
+p {
+  font-size: 14px;
+  width: 80%;
+}
+
+.left{
+  flex-grow: 1;;
+  flex-direction: column;
+  justify-content:flex-end;
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.right{
+  align-items: center;
+  justify-content:center;
+  flex-grow: 4;
+}

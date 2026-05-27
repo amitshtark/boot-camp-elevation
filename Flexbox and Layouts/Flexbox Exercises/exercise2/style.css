@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    width: 600px;
+    border: 2px solid #ddd;
+
+}
+
+.box{
+    background-color: cornflowerblue;
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px;
+    border: 2px solid white;
+    flex-grow: 1;
+}
+.big{
+    flex-grow: 2;
+}
+

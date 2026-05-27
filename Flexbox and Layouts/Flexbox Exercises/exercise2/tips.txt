@@ -1,0 +1,15 @@
+ /* 
+ parent
+     justify-content: flex-end; //זז על ציר מרכזי
+     align-items: flex-end; // זז על ציר משני determines how the items as a whole are aligned within the container
+     flex-direction: row; // סדר האיברים על ציר - אפשר להפוך או להעביר ציר
+    flex-wrap: wrap; // Items wrap around to additional lines.
+    flex-flow: column wrap; // created to combine flex-direction and flex-wrap 
+    align-content: flex-start; // align-content determines the spacing between lines
+
+child
+     order: 1 // שינוי סדר האיברים, בתוך הילדים עצמם ולא אצל האבא
+     align-self: flex-end // like align-items, just for the child alone
+
+
+ */
