@@ -34,7 +34,7 @@ function showMenu(){
   }
   else
   {
-    console.log("ilegal option");
+    console.log("illegal option");
     showMenu();
   }
 }
