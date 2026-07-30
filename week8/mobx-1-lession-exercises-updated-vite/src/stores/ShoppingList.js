@@ -7,20 +7,32 @@ export class ShoppingList {
     constructor() {
         this.list = []
         this.length = 0
-        // your code here
+        makeObservable(this, {
+        list: observable,
+        length: observable,
+        checkItem: action,
+        addItem: action,
+        editItem: action,
+        deleteItem: action
+        }
+        )
 
     }
-    checkItem = () => {
-        // your code here
+    checkItem = (name) => {
+        let item = this.list.find(i => i.name === name)
+        item.completed = !item.completed
+    } 
+    addItem = (name) => {
+        this.list.push(new Item(name))
+        this.length ++;
     }
-    addItem = () => {
-        // your code here
+    editItem = (itemName, newLocation) => {
+        let item = this.list.find(i => i.name === itemName)
+        item.location = newLocation
     }
-    editItem = () => {
-        // your code here
-    }
-    deleteItem = () => {
-        // your code here
+    deleteItem = (name) => {
+        this.list = this.list.filter(i => i.name !== name)
+        this.length --;
     }
 }
 
