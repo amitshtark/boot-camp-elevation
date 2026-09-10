@@ -11,7 +11,6 @@
 
 function longestSubstringKDistinct(str, k) {
   let left = 0;
-  let count = 0;
   let max = 0;
   const counts = new Map();
 
@@ -19,20 +18,24 @@ function longestSubstringKDistinct(str, k) {
   {
     counts.set(str[right], (counts.get(str[right]) || 0) + 1)
 
-    if(counts.size > k)
+    while(counts.size > k)
     {
-        while(set.has(str[left]))
-        {
-        counts.set(char, counts.get(char) - 1);
+      const char = str[left];
 
-            if (counts.get(char) === 0)
-                 {
-            counts.delete(char); //
-            }
+
+      counts.set(char, counts.get(char) - 1);
+
+        if (counts.get(char) === 0)
+        {
+          counts.delete(char);
         }
+        left++;
     }
+    max = Math.max(max, right - left + 1);
   }
+  return max;
 }
+
 
 // Tests
 console.log(longestSubstringKDistinct("araaci", 2)); // → 4
