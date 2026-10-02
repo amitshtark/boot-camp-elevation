@@ -13,7 +13,6 @@
 function lengthOfLongestSubstring(str) {
   let set = new Set();
   let max = 0;
-  let length = 0;
   let left = 0;
   for(let right=0; right<str.length; right++)
   {
